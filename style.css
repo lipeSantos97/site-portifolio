@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
-  color: #ccd6f6;
+  color: white;
 }
 
 .container {
@@ -14,13 +14,17 @@
   display: flex;
   flex-direction: column;
   background-color: #10101a;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header {
+  display: flex;
+  position: sticky;
+  top: 0;
   width: 100%;
   min-height: 40px;
   background-color: #5ed3f3;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -42,7 +46,7 @@
 }
 
 .navBtn a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   padding: 8px;
@@ -58,10 +62,11 @@
 .title {
   text-align: center;
   font-size: 30px;
+  margin: 80px 0;
   padding: 10px;
 }
 
-.sobre {
+.banner {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -69,10 +74,31 @@
   align-items: center;
   width: 100%;
   gap: 10px;
-  padding: 2rem;
 }
 
-.content-sobre {
+.banner-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.bannerBtn {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem;
+  margin-top: 1rem;
+  width: 9rem;
+  background-color: #5ed3f3;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.sobre-text {
   height: auto;
   width: 400px;
   justify-content: center;
@@ -80,7 +106,7 @@
   padding: 5px;
 }
 
-.sobre img {
+.perfil img {
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -90,10 +116,11 @@
 
 #name {
   font-size: 50px;
+  font-weight: 900;
+  color: #5ed3f3;
 }
 
-.tecnologias {
-  /*margin-top: 4rem;*/
+.habilidades {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -101,10 +128,9 @@
   align-items: center;
   width: 100%;
   gap: 10px;
-  padding: 2rem;
 }
 
-.tecnologias div {
+.habilidades div {
   width: 150px;
   display: flex;
   flex-direction: column;
@@ -114,56 +140,16 @@
   cursor: pointer;
 }
 
-.tecnologias div img {
+.habilidades div img {
   width: 100%;
-}
-
-.container-projetos {
-  position: relative;
-  padding: 15px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.gallery-wrapper {
-  overflow-x: auto;
 }
 
 .gallery {
   display: flex;
-  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   gap: 15px;
-}
-
-.arrow-left,
-.arrow-right {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: auto;
-  bottom: 0;
-  font-size: 20px;
-  line-height: 250px;
-  width: 40px;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  border: none;
-  background: linear-gradient(to left, transparent 0%, black 200%);
-  opacity: 0.1;
-  transition: all 600ms ease-in-out;
-}
-
-.arrow-right {
-  left: auto;
-  right: 0;
-  text-align: right;
-  background: linear-gradient(to right, transparent 0%, black 200%);
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-  opacity: 1;
 }
 
 .item {
@@ -174,23 +160,6 @@
   border: 5px solid transparent;
   transition: all 600ms ease-in-out;
   border-radius: 20px;
-}
-
-.current-item {
-  opacity: 1;
-  border: 5px solid turquoise;
-  box-shadow: 0 0 10px turquoise;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.gallery-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.gallery-wrapper {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 
 .button-item {
@@ -216,6 +185,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 15px;
+  margin: 0 200px 100px 200px;
 }
 
 .icon {
@@ -230,8 +200,12 @@
   text-decoration: none;
 }
 
+.icon a p {
+  font-size: 16px;
+}
+
 .icon img {
-  height: 60px;
+  height: 30px;
 }
 
 .box {
@@ -239,8 +213,8 @@
   justify-content: center;
   align-items: center;
   background-color: #5ed3f3;
-  height: 100px;
-  width: 100px;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
 }
 
