@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 20px;
   font-family: "Open Sans", sans-serif;
   color: white;
 }
@@ -23,47 +22,48 @@
   position: sticky;
   top: 0;
   width: 100%;
-  min-height: 40px;
+  min-height: 5rem;
   background-color: #5ed3f3;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 10px;
-  gap: 8px 15px;
+  padding: 1rem;
+  gap: 0.5rem 1rem;
 }
 
 .logoNavBar {
-  width: 120px;
+  width: 8rem;
 }
 
 .menu ul {
   display: flex;
   width: 100%;
   list-style: none;
-  padding: 0;
-  margin: 0;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navBtn a {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
-  padding: 8px;
+  padding: 0.5rem;
   color: #0a192f;
   cursor: pointer;
-  transition: 0.4s;
 }
 
 .navBtn a:hover {
+  font-size: 1.2rem;
+  color: white;
   border-bottom: 2px solid #0a192f;
+  transition: 0.5s;
 }
 
 .title {
   text-align: center;
-  font-size: 30px;
-  margin: 80px 0;
-  padding: 10px;
+  font-size: 2rem;
+  margin: 6rem 0;
+  padding: 0.8rem;
 }
 
 .banner {
@@ -73,13 +73,13 @@
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  gap: 10px;
+  gap: 0.8rem;
 }
 
-.banner-buttons {
+.containerBtn {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 2rem;
 }
 
 .bannerBtn {
@@ -98,24 +98,24 @@
   text-decoration: none;
 }
 
-.sobre-text {
+.banner p {
+  font-size: 1.2rem;
   height: auto;
-  width: 400px;
+  width: 25rem;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 0.3rem;
 }
 
 .perfil img {
-  height: 300px;
-  width: 300px;
+  height: 20rem;
   border-radius: 50%;
   align-items: center;
-  padding: 5px;
+  padding: 0.3rem;
 }
 
 #name {
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 900;
   color: #5ed3f3;
 }
@@ -127,17 +127,31 @@
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  gap: 10px;
+  gap: 0.6rem;
+  margin: 0 0.8rem 0 0.8rem;
 }
 
 .habilidades div {
-  width: 150px;
+  width: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
   cursor: pointer;
+}
+
+.habilidades div:hover {
+  transform: translateY(-10px);
+  border-bottom: 1px solid black;
+}
+
+.habilidades div p {
+  margin: 0.5rem;
+}
+
+.habilidades div:hover p {
+  font-weight: 800;
 }
 
 .habilidades div img {
@@ -149,34 +163,40 @@
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  gap: 15px;
+  gap: 1rem;
+}
+
+.gallery div {
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
-  width: 400px;
-  height: 250px;
+  width: 25rem;
+  height: 15rem;
   flex-shrink: 0;
-  opacity: 0.2;
-  border: 5px solid transparent;
-  transition: all 600ms ease-in-out;
-  border-radius: 20px;
+  margin-bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.button-item {
-  font-size: 22px;
-  font-weight: bold;
+.itemBtn {
+  font-size: 1.2rem;
+  text-align: center;
   color: black;
-  width: 400px;
-  height: 50px;
+  padding-top: 0.5rem;
+  width: 25rem;
+  height: 3rem;
+  margin-top: 0;
   background-color: #5ed3f3;
   cursor: pointer;
-  border-radius: 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.project-item {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.item :hover a {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .icons {
@@ -184,7 +204,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 15px;
+  gap: 1rem;
   margin: 0 200px 100px 200px;
 }
 
@@ -193,7 +213,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 0.3rem;
 }
 
 .icon a {
@@ -201,11 +221,11 @@
 }
 
 .icon a p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .icon img {
-  height: 30px;
+  height: 2rem;
 }
 
 .box {
