@@ -8,8 +8,12 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .container {
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #10101a;
@@ -59,10 +63,15 @@
   transition: 0.5s;
 }
 
+section {
+  min-height: 100vh;
+  padding-top: 3rem;
+}
+
 .title {
   text-align: center;
   font-size: 2rem;
-  margin: 6rem 0;
+  margin: 3rem 0;
   padding: 0.8rem;
 }
 
@@ -120,7 +129,7 @@
   color: #5ed3f3;
 }
 
-.habilidades {
+.skills {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -128,10 +137,9 @@
   align-items: center;
   width: 100%;
   gap: 0.6rem;
-  margin: 0 0.8rem 0 0.8rem;
 }
 
-.habilidades div {
+.skills div {
   width: 10rem;
   display: flex;
   flex-direction: column;
@@ -139,22 +147,23 @@
   align-items: center;
   transition: 0.5s;
   cursor: pointer;
+  padding-top: 3rem;
 }
 
-.habilidades div:hover {
+.skills div:hover {
   transform: translateY(-10px);
   border-bottom: 1px solid black;
 }
 
-.habilidades div p {
+.skills div p {
   margin: 0.5rem;
 }
 
-.habilidades div:hover p {
+.skills div:hover p {
   font-weight: 800;
 }
 
-.habilidades div img {
+.skills div img {
   width: 100%;
 }
 
@@ -164,11 +173,20 @@
   align-items: center;
   flex-flow: row wrap;
   gap: 1rem;
+  height: 400px;
+  transition: 0.5s;
+}
+
+.gallery div:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 5px white;
+  border-radius: 20px;
 }
 
 .gallery div {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .item {
@@ -194,18 +212,14 @@
   border-bottom-right-radius: 20px;
 }
 
-.item :hover a {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 .icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
-  margin: 0 200px 100px 200px;
+  width: auto;
+  padding-top: 4rem;
 }
 
 .icon {
@@ -233,8 +247,8 @@
   justify-content: center;
   align-items: center;
   background-color: #5ed3f3;
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
 }
 
@@ -246,4 +260,20 @@
   background-color: #5ed3f3;
   color: black;
   text-align: center;
+}
+
+::-webkit-scrollbar-track {
+  background: #10101a;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #5ed3f3;
+}
+
+@media (max-width: 630px) {
+}
+
+@media (max-width: 463px) {
 }
